@@ -12,6 +12,10 @@
 #include "Variant.h"
 #include "LinearArray.h"
 #include "Iterator.h"
+#include "Find.h"
+#include "AllOf.h"
+#include "AnyOf.h"
+#include "Atomic.h"
 
 void StringView::foo() {
 
