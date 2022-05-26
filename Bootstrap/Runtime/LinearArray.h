@@ -114,6 +114,7 @@ namespace Detail {
 
     template<typename T, size_t... Is>
     constexpr auto integerSequenceGenerateLinearArray([[maybe_unused]] T const offset, IntegerSequence<T, Is...>) -> LinearArray<T, sizeof...(Is)> {
+        
         return { { (offset + Is)... } };
     }
 }
