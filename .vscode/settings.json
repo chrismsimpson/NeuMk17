@@ -4,7 +4,10 @@
     "cmake.buildDirectory": "${workspaceFolder}/Build",
     "files.associations": {
         "*.c": "cpp",
+        "*.C": "c",
         "*.cpp": "cpp",
-        "*.h": "cpp"
+        "*.h": "cpp",
+        "atomic": "cpp",
+        "utility": "cpp"
     }
 }
