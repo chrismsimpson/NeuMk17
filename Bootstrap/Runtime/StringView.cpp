@@ -9,6 +9,9 @@
 #include "RefPointer.h"
 #include "Error.h"
 #include "Optional.h"
+#include "Variant.h"
+#include "LinearArray.h"
+#include "Iterator.h"
 
 void StringView::foo() {
 

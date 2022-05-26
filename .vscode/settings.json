@@ -32,6 +32,8 @@
         "vector": "cpp",
         "sstream": "cpp",
         "thread": "cpp",
-        "__nullptr": "cpp"
+        "__nullptr": "cpp",
+        "string_view": "cpp",
+        "typeinfo": "cpp"
     }
 }

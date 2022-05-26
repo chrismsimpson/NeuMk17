@@ -258,8 +258,11 @@ public:
     constexpr void mod(T other) {
 
         auto initial = m_value;
+
         div(other);
+
         m_value *= other;
+        
         m_value = initial - m_value;
     }
 
@@ -268,7 +271,9 @@ public:
     constexpr Checked& operator+=(Checked const& other) {
 
         m_overflow |= other.m_overflow;
+
         add(other.value());
+
         return *this;
     }
 
@@ -293,6 +298,7 @@ public:
     constexpr Checked& operator-=(T other) {
 
         sub(other);
+
         return *this;
     }
 
@@ -301,13 +307,16 @@ public:
     constexpr Checked& operator*=(Checked const& other) {
 
         m_overflow |= other.m_overflow;
+
         mul(other.value());
+
         return *this;
     }
 
     constexpr Checked& operator*=(T other) {
 
         mul(other);
+
         return *this;
     }
 
@@ -316,7 +325,9 @@ public:
     constexpr Checked& operator/=(Checked const& other) {
 
         m_overflow |= other.m_overflow;
+
         div(other.value());
+
         return *this;
     }
 
